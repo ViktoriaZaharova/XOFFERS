@@ -1,0 +1,57 @@
+@import "vars"
+
+header
+	padding: 20px 0
+	z-index: 10
+	width: 100%
+	left: 0
+	top: 0
+	position: fixed
+	background: linear-gradient(180deg, #161725 18.36%, rgba(22, 23, 37, 0.00) 100%)
+	font-size: 12px
+
+.logo
+	max-width: 97px
+	width: 100%
+	@include d-flex	
+
+.header-wrapper
+	width: 100%
+	display: flex
+	align-items: center
+	flex-wrap: wrap
+	border-radius: 20.293px
+	backdrop-filter: blur(16.911008834838867px)
+	padding: 12px 20px
+
+.nav-menu
+	margin: 0 auto	
+
+.menu
+	display: flex
+	align-items: center
+	text-transform: uppercase
+	li
+		margin: 0 33px 0 0
+		&:last-child
+			margin: 0
+		a
+			color: #fff
+			&:hover
+				color: $accent		
+
+.menu-user
+	display: flex
+	align-items: center
+	text-transform: uppercase
+	li
+		margin: 0 33px 0 0
+		&:last-child
+			margin: 0
+		a
+			color: #fff
+			&:hover
+				color: $accent		
+
+.language-box
+	margin: 0 0 0 33px
