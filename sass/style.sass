@@ -47,24 +47,42 @@ body
 	color: #fff
 
 .wrapper
+	width: 100%
+
+.section-decor
+	width: 100%
+	height: 100%
 	position: relative
 	z-index: 1
-	width: 100%
-	&::before, &::after
+	&::before
 		content: ''
 		position: absolute
-		z-index: -1
-		width: 320px
-		height: 100%
-		top: 0
-	&::before
 		left: 0
-		background: url('../img/decor1.svg') repeat-y center
-		// background-size: 280px
-	&::after
-		right: 0
-		background: url('../img/decor2.svg') repeat-y center
-		// background-size: 280px
+		bottom: 0
+		width: 100%
+		height: 1px
+		opacity: 0.5
+		background: linear-gradient(270deg, rgba(255, 255, 255, 0.00) 0%, #FFF 49.82%, rgba(255, 255, 255, 0.00) 101.43%)
+	&__img
+		position: absolute
+		z-index: -1
+		width: 100%
+		height: 100%
+		left: 0
+		top: 0
+		&::before, &::after
+			content: ''
+			position: absolute
+			z-index: -1
+			width: 320px
+			height: 100%
+			top: 0
+		&::before
+			left: 0
+			background: url('../img/decor1.svg') repeat-y center
+		&::after
+			right: 0
+			background: url('../img/decor2.svg') repeat-y center
 
 img
 	display: block
@@ -146,6 +164,7 @@ button, .btn
 	align-items: center
 	justify-content: center
 	text-align: center
+	text-transform: uppercase
 	padding: 10px 75px
 	font-size: 24px
 	font-weight: bold
@@ -159,6 +178,21 @@ button, .btn
 	box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.15)
 	&:hover
 		background: linear-gradient(78deg, #FF3842 11.7%, #3232FF 92.64%)
+
+.btn-red
+	background: $accent
+	color: #fff
+	&:hover
+		background: $pink
+		color: #fff
+
+.btn-violet
+	background: $violet
+	color: #fff
+	&:hover
+		background: $accent
+		color: #fff
+		border-color: $accent
 
 .svg-icon
 	display: inline-block
@@ -179,6 +213,18 @@ ul, ol
 .list-dots
 	list-style-type: disc
 
+.list-line
+	li
+		display: flex
+		align-items: center
+		&::before
+			content: ''
+			display: inline-block
+			width: 13px
+			height: 2px
+			margin: 0 7px 0 0
+			background: linear-gradient(to right, #FF3945 -4.28%, #3737F9 241.07%)
+
 .container
 	max-width: 1300px
 	padding: 0 10px
@@ -192,16 +238,75 @@ h1
 	font-size: 48px
 	font-weight: bold
 	letter-spacing: 1.44px
+	line-height: 135%
 	text-transform: uppercase
 	font-family: $font
 	width: 100%
 	margin: 0 0 40px
+	.color-gradient
+		display: inline-block
+
+h2
+	width: 100%
+	text-align: center
+	font-size: 34px
+	font-weight: bold
+	font-family: $font
+	margin: 0 auto 10px
+
+h3
+	font-size: 26px
+	font-weight: bold
+	margin: 0
+	width: 100%
+
+h4
+	width: 100%
+	font-size: 26px
+	font-weight: bold
+	margin: 0
+
+.box-text
+	letter-spacing: -0.6px
+	font-size: 20px
+	line-height: 150%
+
+.subtitle-text
+	text-align: center
+	font-size: 20px
+	letter-spacing: -0.6px
+	line-height: 150%
+	margin: 0 auto
 
 .color-gradient
-	background: linear-gradient(to right, rgba(255,56,66,1) 0%,rgba(231,62,204,1) 50%,rgba(50,50,255,1) 100%)
+	background: linear-gradient(90deg, #FF3842 -28.58%, #3535FF 263.75%)
 	background-clip: text
 	-webkit-background-clip: text
 	-webkit-text-fill-color: transparent
+
+.color-accent
+	color: $accent
+
+.color-violet
+	color: $violet
+
+.p-80
+	padding: 80px 0
+
+.p-100
+	padding: 100px 0	
+
+.p-120
+	padding: 120px 0
+
+.mb-20
+	margin-bottom: 20px
+
+.column-count-2
+	column-count: 2
+
+.bg-black
+	background: #161725 !important
 
 .slick-slider
 	width: 100%
