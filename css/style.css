@@ -19,6 +19,20 @@
   src: url("../fonts/Benzin/Benzin-Bold.eot");
   src: url("../fonts/Benzin/Benzin-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Benzin/Benzin-Bold.woff") format("woff"), url("../fonts/Benzin/Benzin-Bold.ttf") format("truetype");
 }
+@font-face {
+  font-family: "CriteriaCF";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/CriteriaCF/CriteriaCFRegular.eot");
+  src: url("../fonts/CriteriaCF/CriteriaCFRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/CriteriaCF/CriteriaCFRegular.woff") format("woff"), url("../fonts/CriteriaCF/CriteriaCFRegular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "CriteriaCF";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/CriteriaCF/CriteriaCFMediumRegular.eot");
+  src: url("../fonts/CriteriaCF/CriteriaCFMediumRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/CriteriaCF/CriteriaCFMediumRegular.woff") format("woff"), url("../fonts/CriteriaCF/CriteriaCFMediumRegular.ttf") format("truetype");
+}
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -59,7 +73,9 @@ table {
 }
 
 body {
-  font-size: 16px;
+  font-size: 20px;
+  letter-spacing: -0.6px;
+  line-height: 150%;
   min-width: 320px;
   position: relative;
   line-height: normal;
@@ -365,17 +381,8 @@ h4 {
   margin: 0;
 }
 
-.box-text {
-  letter-spacing: -0.6px;
-  font-size: 20px;
-  line-height: 150%;
-}
-
 .subtitle-text {
   text-align: center;
-  font-size: 20px;
-  letter-spacing: -0.6px;
-  line-height: 150%;
   margin: 0 auto;
 }
 
@@ -429,36 +436,88 @@ h4 {
   outline: none;
 }
 
-.label-checkbox {
-  position: relative;
+.list-messangers {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;
-  margin: 15px 0 0;
-  line-height: 1.14;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+  letter-spacing: -0.6px;
+  line-height: 150%;
+}
+.list-messangers li {
+  margin: 0 30px 0 0;
+}
+.list-messangers li:last-child {
+  margin: 0;
+}
+.list-messangers li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+.list-messangers li a:hover {
+  color: #FF3880;
+}
+.list-messangers li a svg {
+  width: 24px;
+  min-width: 24px;
+  height: 25px;
+  fill: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 10px 0 0;
 }
 
-.inp-check {
-  display: none;
+.list-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-
-.checkbox-custom {
-  margin: 0 12px 0 0;
-  position: relative;
-  border-radius: 6px;
-  background-color: #fff;
-  width: 16px;
-  height: 16px;
-  min-width: 16px;
-  cursor: pointer;
+.list-social li {
+  margin: 0 25px 0 0;
 }
-
-.inp-check:checked ~ .checkbox-custom {
-  background: #fff url("../img/check-black.svg") no-repeat center;
-  background-size: 8px;
+.list-social li:last-child {
+  margin: 0;
+}
+.list-social li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 18px;
+  height: 15px;
+  min-width: 18px;
+  fill: #fff;
+}
+.list-social li a:hover {
+  fill: #FF3880;
 }

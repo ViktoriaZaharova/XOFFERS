@@ -1,21 +1,88 @@
-@font-face {
-  font-family: "RoadUA";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/RoadUA/RoadUA-Regular.eot");
-  src: url("../fonts/RoadUA/RoadUA-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/RoadUA/RoadUA-Regular.woff") format("woff"), url("../fonts/RoadUA/RoadUA-Regular.ttf") format("truetype");
+footer {
+  font-family: "CriteriaCF", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 26px 0 67px;
+  background: #232439;
 }
-@font-face {
-  font-family: "RoadUA";
-  font-weight: 700;
-  font-style: normal;
-  src: url("../fonts/RoadUA/RoadUA-Bold.eot");
-  src: url("../fonts/RoadUA/RoadUA-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/RoadUA/RoadUA-Bold.woff") format("woff"), url("../fonts/RoadUA/RoadUA-Bold.ttf") format("truetype");
+footer h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 20px;
+  color: #969696;
 }
-@font-face {
-  font-family: "Benzin";
-  font-weight: 700;
-  font-style: normal;
-  src: url("../fonts/Benzin/Benzin-Bold.eot");
-  src: url("../fonts/Benzin/Benzin-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Benzin/Benzin-Bold.woff") format("woff"), url("../fonts/Benzin/Benzin-Bold.ttf") format("truetype");
+footer .list-messangers {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 14px;
+  line-height: 24px;
+}
+footer .list-messangers li {
+  margin: 0 0 7px;
+}
+footer .list-messangers li:last-child {
+  margin: 0;
+}
+footer .list-messangers a {
+  color: #858585;
+}
+footer .list-messangers a svg {
+  width: 20px;
+  height: 15px;
+  min-width: 20px;
+  fill: #858585;
+}
+footer .logo {
+  margin: 0 auto 0 0;
+}
+
+.footer-column {
+  margin: 0 0 0 auto;
+}
+.footer-column .link {
+  margin: 40px auto 0;
+  color: #fff;
+}
+.footer-column .link:hover {
+  color: #FF3880;
+}
+
+.footer-box {
+  margin: 0 75px;
+}
+
+.footer-menu {
+  text-transform: lowercase;
+  line-height: 24px;
+}
+.footer-menu li {
+  margin: 0 0 5px;
+}
+.footer-menu li:last-child {
+  margin: 0;
+}
+.footer-menu li a {
+  color: #858585;
+}
+.footer-menu li a:hover {
+  color: #FF3880;
+}
+
+.footer-bottom {
+  margin: 22px 0 0;
+  border-top: 1px solid #969696;
+  padding: 18px 0 24px;
+  text-align: center;
+  font-size: 13px;
+  color: #858585;
+  font-weight: 500;
 }
