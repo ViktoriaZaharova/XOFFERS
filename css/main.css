@@ -62,23 +62,23 @@
 
 @-webkit-keyframes rotate-img {
   0% {
-    -webkit-transform: translate(-50%, 0) rotateY(0deg);
-            transform: translate(-50%, 0) rotateY(0deg);
+    -webkit-transform: translate(-50%, 0) scaleX(0);
+            transform: translate(-50%, 0) scaleX(0);
   }
   100% {
-    -webkit-transform: translate(-50%, 0) rotateY(360deg);
-            transform: translate(-50%, 0) rotateY(360deg);
+    -webkit-transform: translate(-50%, 0) scaleX(-1);
+            transform: translate(-50%, 0) scaleX(-1);
   }
 }
 
 @keyframes rotate-img {
   0% {
-    -webkit-transform: translate(-50%, 0) rotateY(0deg);
-            transform: translate(-50%, 0) rotateY(0deg);
+    -webkit-transform: translate(-50%, 0) scaleX(0);
+            transform: translate(-50%, 0) scaleX(0);
   }
   100% {
-    -webkit-transform: translate(-50%, 0) rotateY(360deg);
-            transform: translate(-50%, 0) rotateY(360deg);
+    -webkit-transform: translate(-50%, 0) scaleX(-1);
+            transform: translate(-50%, 0) scaleX(-1);
   }
 }
 .plane .subtitle-text {
@@ -350,6 +350,7 @@
 }
 
 .btn-link-blog {
+  width: 100%;
   height: 100%;
   border-radius: 10px;
   -webkit-box-orient: vertical;

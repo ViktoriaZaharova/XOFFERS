@@ -1,16 +1,303 @@
-/*==========  Desktop First  ==========*/
+/*==========	Desktop First	==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1400px)
+	.home
+		padding: 140px 0 80px
+
+	.home-content
+		max-width: 600px
+
+	.home-image
+		min-width: auto
+		max-width: 400px
+		&::before
+			width: 420px
+			height: 90px
+			bottom: 35px
+			left: 45%
+		&::after
+			width: calc(100% + 80px)
+			height: calc(100% + 80px)
+
+	h1
+		font-size: 36px
+
+	h2
+		font-size: 30px
+
+	.btn
+		font-size: 20px
+		height: 50px
+		padding: 15px 50px
+
+	.btn-link-blog
+		height: 100%
+
 @media only screen and (max-width: 1200px)
+	body
+		font-size: 18px
+
+	.registeration-wrapper
+		&__img
+			width: 550px
+		&__content
+			width: calc(100% - 550px)
 
 @media only screen and (max-width: 992px)
+	body
+		font-size: 16px
+		letter-spacing: 0
+		line-height: normal
+
+	.p-80
+		padding: 50px 0
+
+	.p-100
+		padding: 60px 0
+
+	.p-120
+		padding: 70px 0
+
+	.section-decor__img::before, .section-decor__img::after
+		width: 210px
+		background-size: 100%
+
+	.home-image
+		margin: 30px auto 0
+
+	.home
+		.btn
+			margin: 20px auto 0
+
+	.home-content
+		max-width: none
+
+	.btn
+		font-size: 16px
+		padding: 10px 30px
+		height: 40px
+
+	h1
+		text-align: center
+		font-size: 30px
+		letter-spacing: 1px
+
+	h2
+		font-size: 28px
+
+	h3
+		font-size: 22px	
+
+	.menu li, .menu-user li
+		margin: 0 15px 0 0
+
+	header
+		padding: 10px 0
+
+	.header-wrapper
+		padding: 7px 10px
+
+	.footer-box
+		margin: 0 30px
+
+	.btn-link-blog
+		height: 100%
+		svg
+			width: 100%
+
+	.registeration-wrapper
+		&__img
+			display: none
+
+		&__content
+			width: 100%
+			padding: 20px
+		.btn
+			margin: 20px auto
+
+	.blog
+		padding: 60px 0 50px
+
+	.plane-box
+		width: 100%
+		max-width: none
+		border-radius: 20px
+		margin: 0 0 20px
+		padding: 30px 20px
+		&:last-child
+			margin: 0
+		&:first-child, &:last-child
+			border-radius: 20px
+			padding: 30px 20px
+				
+	.start 
+		h2
+			margin: 0 auto 30px
+
+	.start-box
+		margin: 0 0 30px
+		h3
+			font-size: 28px
+		h4
+			font-size: 22px
+		&__img
+			min-width: auto	
+			margin: 20px auto 0
+			display: flex
+			align-items: center
+			justify-content: center
+
+	.choose
+		padding: 70px 0 50px
+
+	.choose-box
+		padding: 30px 20px
+		&__icon
+			margin: 0 auto 20px
+			
+	.about
+		padding: 75px 0 60px		
 
 @media only screen and (max-width: 768px)
+	.nav-menu
+		display: none
+		
+
+	.btn-burger
+		display: flex		
+
+	.menu
+		flex-direction: column
+		align-items: flex-start
+		li
+			margin: 0 0 10px
+			width: 100%
+			&:last-child
+				margin: 0
+			a
+				width: 100%
+
+	.logo
+		margin: 0 auto 0 0
+
+	.footer-box
+		margin: 20px 0
+		width: 50%
+
+	.footer-column
+		width: 100%
+		.link
+			margin: 20px 0 0
+
+	footer
+		padding: 30px 0
+		.logo
+			margin: 0
+			width: 100%
+			max-width: none
+			align-items: flex-start
+			justify-content: flex-start
+			img
+				max-width: 115px
+
+	.footer-bottom
+		padding: 20px 0
+
+	.about .subtitle-text
+		margin: 10px auto 30px	
+
+	.about-signal-box
+		&__body	
+			padding: 20px
+			height: 270px
+
+	.about-signal 
+		h3
+			margin: 0 auto 20px		
 
 @media only screen and (max-width: 576px)
+	h1
+		font-size: 24px
+
+	h2
+		font-size: 22px
+
+	h3
+		font-size: 20px
+
+	h4
+		font-size: 18px		
+
+	.home
+		padding: 100px 0 70px	
+
+	.home-image
+		max-width: 260px
+		&:after
+			width: calc(100% + 50px)
+			height: calc(100% + 50px)
+		&::before
+			width: 300px
+			height: 60px
+			bottom: 22px
+
+	.section-decor__img::before, .section-decor__img::after
+		width: 120px
+
+	.list-messangers
+		flex-direction: column
+		letter-spacing: 0
+		font-size: 16px
+		li
+			margin: 0 0 10px
+			&:last-child
+				margin: 0
+
+	footer
+		font-size: 13px
+		.list-messangers
+			font-size: 13px
+
+	.start-box
+		h3
+			font-size: 20px
+		h4
+			font-size: 18px
+
+	.column-count-2
+		column-count: 1	
+
+	.choose-box
+		.box-text
+			max-width: none
+			br
+				display: none		
+
+	.about-signal-box__body
+		height: auto	
+
+	.language-box
+		margin: 0 0 0 20px				
 
 @media only screen and (max-width: 480px)
 
 @media only screen and (max-width: 420px)
 
-@media only screen and (max-width: 370px)	
+@media only screen and (max-width: 370px)
+	.header-wrapper
+		padding: 5px
+
+	.home-image
+		max-width: 220px
+		&::before
+			width: 270px
+			height: 54px
+			bottom: 18px
+
+	.footer-box
+		width: 100%
+
+	footer
+		h4
+			margin: 0 0 15px	

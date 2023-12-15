@@ -26,6 +26,58 @@
 <body>
 
 	<div class="wrapper">
+		<div class="mobile-menu">
+			<div class="mobile-menu__close"></div>
+			<a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+			<ul class="menu my-ul">
+				<li><a href="#plane" class="go_to">Plans</a></li>
+				<li><a href="#start" class="go_to">How to start?</a></li>
+				<li><a href="#whom" class="go_to">For whom?</a></li>
+				<li><a href="#choose" class="go_to">Why Choose Us?</a></li>
+				<li><a href="#about" class="go_to">About signals</a></li>
+				<li><a href="#blog" class="go_to">BLOG</a></li>
+			</ul>
+
+			<ul class="list-messangers my-ul">
+				<li><a href="mailto:support@xoffers.one" target="_blank">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#mail"></use>
+						</svg>
+						<span>support@xoffers.one</span>
+					</a></li>
+				<li><a href="https://t.me/@xoffers.one" target="_blank">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#tg"></use>
+						</svg>
+						<span>@xoffers.one</span>
+					</a></li>
+			</ul>
+
+			<ul class="list-social my-ul">
+				<li><a href="#" target="_blank">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#fb"></use>
+						</svg>
+					</a></li>
+				<li><a href="#" target="_blank">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#vk"></use>
+						</svg>
+					</a></li>
+				<li><a href="#" target="_blank">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#youtube"></use>
+						</svg>
+					</a></li>
+				<li><a href="#" target="_blank">
+						<svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#tg"></use>
+						</svg>
+					</a></li>
+			</ul>
+
+		</div>
+
 		<header>
 			<div class="container">
 				<div class="row">
@@ -48,8 +100,13 @@
 								<li><a href="#">Sign Up</a></li>
 							</ul>
 
-							<div class="language-box">
-								<a href="#" class="language-link"><img src="img/lang.svg" alt=""></a>
+							<div class="language-box dropdown">
+								<a href="#" class="language-link" data-bs-toggle="dropdown"><img src="img/lang.svg" alt=""></a>
+								<div class="dropdown-menu">
+									<a href="#" class="dropdown-item"><img src="img/lang.svg" alt=""></a>
+									<a href="#" class="dropdown-item"><img src="img/lang.svg" alt=""></a>
+									<a href="#" class="dropdown-item"><img src="img/lang.svg" alt=""></a>
+								</div>
 							</div>
 
 							<div class="btn-burger">
@@ -68,15 +125,15 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-lg-7">
-						<div class="home-content">
-							<h1>Official affiliate program of <span class="color-gradient">vfxAlert and xSignals trading
+						<div class="home-content animate__animated animate__fadeInLeft wow">
+							<h1>Official affiliate program of <span class="color-gradient">vfxAlert <br>and xSignals trading
 									signals</span></h1>
 							<a href="#" class="btn btn-accent">BECOME A PARTNER</a>
 						</div>
 					</div>
 
 					<div class="col-12 col-lg-5">
-						<div class="home-image"><img src="img/home-img1.png" alt=""></div>
+						<div class="home-image animate__animated animate__fadeInRight wow"><img src="img/home-img1.png" alt=""></div>
 					</div>
 				</div>
 			</div>
@@ -87,26 +144,26 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<h2>Plans</h2>
+						<h2 class="animate__animated animate__fadeIn wow">Plans</h2>
 
-						<div class="subtitle-text">
+						<div class="subtitle-text animate__animated animate__fadeIn wow">
 							<p>Refer new users to vfxAlert and xSignals apps and get commissions</p>
 						</div>
 						<div class="plane-wrapper">
-							<div class="plane-box">
+							<div class="plane-box animate__animated animate__fadeInLeft wow">
 								<h3>PAY PER SALE</h3>
 								<div class="box-text">
 									<p>Up to 70% from each purchase of refer user</p>
 								</div>
 							</div>
-							<div class="plane-box">
+							<div class="plane-box animate__animated animate__fadeIn wow">
 								<h3>SUB AFFILATE</h3>
 								<div class="box-text">
 									<p>5% of the profit generated
 										by recruited partners</p>
 								</div>
 							</div>
-							<div class="plane-box">
+							<div class="plane-box animate__animated animate__fadeInRight wow">
 								<h3>SPECIAL OFFER</h3>
 								<div class="box-text">
 									<p>Individual conditions
@@ -124,14 +181,14 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<h2>How to start?</h2>
+						<h2 class="animate__animated animate__fadeIn wow">How to start?</h2>
 					</div>
 
 					<div class="col-12">
 						<div class="start-box">
 							<div class="row align-items-center">
 								<div class="col-12 col-lg-6 offset-lg-1 order-lg-1">
-									<div class="start-box__content">
+									<div class="start-box__content animate__animated animate__fadeIn wow">
 										<h3>01</h3>
 										<h4>Register</h4>
 										<div class="box-text">
@@ -144,7 +201,7 @@
 									</div>
 								</div>
 								<div class="col-12 col-lg-5">
-									<div class="start-box__img"><img src="img/start-img1.svg" alt=""></div>
+									<div class="start-box__img animate__animated animate__fadeIn wow"><img src="img/start-img1.svg" alt=""></div>
 								</div>
 							</div>
 						</div>
@@ -152,7 +209,7 @@
 						<div class="start-box">
 							<div class="row align-items-center">
 								<div class="col-12 col-lg-8">
-									<div class="start-box__content">
+									<div class="start-box__content animate__animated animate__fadeIn wow">
 										<h3>02</h3>
 										<h4>Attract traders and earn up to 70% on each purchase. Promote signals</h4>
 										<div class="box-text">
@@ -168,14 +225,14 @@
 									</div>
 								</div>
 								<div class="col-12 col-lg-4">
-									<div class="start-box__img"><img src="img/start-img2.svg" alt=""></div>
+									<div class="start-box__img animate__animated animate__fadeIn wow"><img src="img/start-img2.svg" alt=""></div>
 								</div>
 							</div>
 						</div>
 						<div class="start-box">
 							<div class="row align-items-center">
 								<div class="col-12 col-lg-7 order-lg-1">
-									<div class="start-box__content">
+									<div class="start-box__content animate__animated animate__fadeIn wow">
 										<h3>03</h3>
 										<h4>Attract partners and receive 5% of the profit from the attracted partners</h4>
 										<div class="box-text">
@@ -191,7 +248,7 @@
 									</div>
 								</div>
 								<div class="col-12 col-lg-5">
-									<div class="start-box__img"><img src="img/start-img3.svg" alt=""></div>
+									<div class="start-box__img animate__animated animate__fadeIn wow"><img src="img/start-img3.svg" alt=""></div>
 								</div>
 							</div>
 						</div>
@@ -199,7 +256,7 @@
 						<div class="start-box">
 							<div class="row align-items-center">
 								<div class="col-12 col-lg-7">
-									<div class="start-box__content">
+									<div class="start-box__content animate__animated animate__fadeIn wow">
 										<h3>04</h3>
 										<h4>Withdraw your profit in a convenient way</h4>
 										<div class="box-text">
@@ -216,14 +273,14 @@
 									</div>
 								</div>
 								<div class="col-12 col-lg-5">
-									<div class="start-box__img"><img src="img/start-img4.svg" alt=""></div>
+									<div class="start-box__img animate__animated animate__fadeIn wow"><img src="img/start-img4.svg" alt=""></div>
 								</div>
 							</div>
 						</div>
 					</div>
 
 					<div class="col-12 col-lg-8 offset-lg-2">
-						<a href="#" class="btn btn-accent w-100">Get Started</a>
+						<a href="#" class="btn btn-accent w-100 animate__animated animate__fadeInUp wow">Get Started</a>
 					</div>
 				</div>
 
@@ -244,13 +301,13 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<h2>Why Choose Us?</h2>
+						<h2 class="animate__animated animate__fadeIn wow">Why Choose Us?</h2>
 					</div>
 				</div>
 
 				<div class="row">
 					<div class="col-12 col-md-6 mb-20">
-						<div class="choose-box">
+						<div class="choose-box animate__animated animate__fadeInLeft wow">
 							<div class="choose-box__icon"><img src="img/choose1.svg" alt=""></div>
 							<div class="choose-box__body">
 								<h4>Monetize all traffic</h4>
@@ -262,7 +319,7 @@
 						</div>
 					</div>
 					<div class="col-12 col-md-6 mb-20">
-						<div class="choose-box">
+						<div class="choose-box animate__animated animate__fadeInRight wow">
 							<div class="choose-box__icon"><img src="img/choose2.svg" alt=""></div>
 							<div class="choose-box__body">
 								<h4>Direct advertiser</h4>
@@ -273,7 +330,7 @@
 						</div>
 					</div>
 					<div class="col-12 col-md-6 col-lg-4 mb-20">
-						<div class="choose-box">
+						<div class="choose-box animate__animated animate__fadeInLeft wow">
 							<div class="choose-box__icon"><img src="img/choose3.svg" alt=""></div>
 							<div class="choose-box__body">
 								<h4>Any GEO</h4>
@@ -284,7 +341,7 @@
 						</div>
 					</div>
 					<div class="col-12 col-md-6 col-lg-4 mb-20">
-						<div class="choose-box">
+						<div class="choose-box animate__animated animate__fadeInLeft wow">
 							<div class="choose-box__icon"><img src="img/choose4.svg" alt=""></div>
 							<div class="choose-box__body">
 								<h4>Advertising materials</h4>
@@ -295,7 +352,7 @@
 						</div>
 					</div>
 					<div class="col-12 col-md-6 col-lg-4 mb-20">
-						<div class="choose-box">
+						<div class="choose-box animate__animated animate__fadeInLeft wow">
 							<div class="choose-box__icon"><img src="img/choose5.svg" alt=""></div>
 							<div class="choose-box__body">
 								<h4>Support 24/7</h4>
@@ -314,9 +371,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<h2>About signals</h2>
+						<h2 class="animate__animated animate__fadeIn wow">About signals</h2>
 
-						<div class="subtitle-text">
+						<div class="subtitle-text animate__animated animate__fadeIn wow">
 							<p>We present analytical signals for trading and over 12 additional indicators and forecasting tools. And
 								all this
 								functionality <br>in one window with the broker
@@ -326,8 +383,8 @@
 				</div>
 
 				<div class="row">
-					<div class="col-12 col-lg-6 mb-20">
-						<div class="about-signal">
+					<div class="col-12 col-md-6 mb-20">
+						<div class="about-signal animate__animated animate__fadeInLeft wow">
 							<h3 class="color-accent">xSignals</h3>
 							<div class="about-signal-box">
 								<div class="about-signal-box__body">
@@ -339,8 +396,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-lg-6 mb-20">
-						<div class="about-signal">
+					<div class="col-12 col-md-6 mb-20">
+						<div class="about-signal animate__animated animate__fadeInRight wow">
 							<h3 class="color-violet">vfxAlert</h3>
 							<div class="about-signal-box">
 								<div class="about-signal-box__body">
@@ -362,7 +419,7 @@
 				<div class="row">
 					<div class="col-12">
 						<div class="registeration-wrapper">
-							<div class="registeration-wrapper__content">
+							<div class="registeration-wrapper__content animate__animated animate__fadeInLeft wow">
 								<h2>Register and write to us!</h2>
 								<div class="subtitle-text">
 									<p>We will send you an individual offer</p>
@@ -383,7 +440,7 @@
 										</a></li>
 								</ul>
 							</div>
-							<div class="registeration-wrapper__img"><img src="img/registration-img.png" alt=""></div>
+							<div class="registeration-wrapper__img animate__animated animate__fadeIn wow"><img src="img/registration-img.png" alt=""></div>
 						</div>
 					</div>
 				</div>
@@ -395,8 +452,8 @@
 			<div class="section-decor__img"></div>
 			<div class="container">
 				<div class="row">
-					<div class="col-12 col-md-6 col-lg-3 mb-20">
-						<a href="#" class="blog-card">
+					<div class="col-12 col-sm-6 col-lg-3 mb-20">
+						<a href="#" class="blog-card animate__animated animate__fadeInLeft wow">
 							<span class="blog-card__img"><img src="img/blog1.png" alt=""></span>
 							<span class="blog-card__body">
 								<span class="blog-card__title">Discover the Ultimate Forex Affiliate Program to Maximize Your
@@ -404,8 +461,8 @@
 							</span>
 						</a>
 					</div>
-					<div class="col-12 col-md-6 col-lg-3 mb-20">
-						<a href="#" class="blog-card">
+					<div class="col-12 col-sm-6 col-lg-3 mb-20">
+						<a href="#" class="blog-card animate__animated animate__fadeInLeft wow">
 							<span class="blog-card__img"><img src="img/blog2.png" alt=""></span>
 							<span class="blog-card__body">
 								<span class="blog-card__title">Online Affiliate Marketing: Top Trends and Possibility for Aspiring
@@ -413,16 +470,16 @@
 							</span>
 						</a>
 					</div>
-					<div class="col-12 col-md-6 col-lg-3 mb-20">
-						<a href="#" class="blog-card">
+					<div class="col-12 col-sm-6 col-lg-3 mb-20">
+						<a href="#" class="blog-card animate__animated animate__fadeInRight wow">
 							<span class="blog-card__img"><img src="img/blog3.png" alt=""></span>
 							<span class="blog-card__body">
 								<span class="blog-card__title">Extra Bonus for Video: Terms and Conditions</span>
 							</span>
 						</a>
 					</div>
-					<div class="col-12 col-md-6 col-lg-3 mb-20">
-						<a href="#" class="btn btn-accent btn-link-blog">
+					<div class="col-12 col-sm-6 col-lg-3 mb-20">
+						<a href="#" class="btn btn-accent btn-link-blog animate__animated animate__fadeInRight wow">
 							<span>GO TO BLOG</span>
 							<svg class="svg-icon">
 								<use xlink:href="img/sprite.svg#arrow-right"></use>
