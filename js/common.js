@@ -59,55 +59,5 @@ $(document).ready(function () {
 	});
 });
 
-$(document).ready(function () {
-// var block_show = null;
-
-// function scrollTracking() {
-// 	var wt = $(window).scrollTop();
-// 	var wh = $(window).height();
-// 	var et = $('.advantages').offset().top;
-// 	var eh = $('.advantages').outerHeight();
-
-// 	if (et >= wt && et + eh <= wh + wt) {
-// 		if (block_show == null || block_show == false) {
-// 			$('body').addClass('stop-scroll');
-// 		}
-// 		block_show = true;
-// 	}
-// 	else {
-// 		if (block_show == null || block_show == true) {
-// 			$('body').removeClass('stop-scroll');
-// 		}
-// 		block_show = false;
-// 	}
-// }
-
-// $(window).scroll(function () {
-// 	scrollTracking();
-// });
-
-// $(document).ready(function () {
-// 	scrollTracking();
-// });
-
-
-// $('.whom-slider').slick({
-// 	slidesToShow: 1,
-// 	fade: true,
-// 	arrows: false,
-// 	dots: false,
-// 	autoplay: true,
-// 	autoplaySpeed: 2000,
-// 	draggable: true,
-// 	swipeToSlide: true,
-// 	pauseOnHover: false
-// });
-
-// $(".whom-slider").on("afterChange", function (event) {
-// 	if ($(this).find('.slick-slide').last().hasClass('slick-current')) {
-// 		$('body').removeClass('stop-scroll');
-// 	}
-// });
-});
 // animate css + wow js
 new WOW().init();

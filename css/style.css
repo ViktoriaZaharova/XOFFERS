@@ -83,6 +83,9 @@ body {
   background: #232439;
   color: #fff;
 }
+body.stop-scroll {
+  overflow: hidden;
+}
 
 .wrapper {
   width: 100%;

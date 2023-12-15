@@ -47,6 +47,9 @@ body
 	background: #232439
 	color: #fff
 
+	&.stop-scroll
+		overflow: hidden
+
 .wrapper
 	width: 100%
 	position: relative
@@ -75,8 +78,6 @@ body
 	&.no-fixed
 		&::after, &::before
 			display: none
-					
-		
 
 .section-decor
 	width: 100%
@@ -300,7 +301,6 @@ h4
 	line-height: normal
 	margin: 0
 
-
 .subtitle-text
 	text-align: center
 	margin: 0 auto
@@ -321,7 +321,7 @@ h4
 	padding: 80px 0
 
 .p-100
-	padding: 100px 0	
+	padding: 100px 0
 
 .p-120
 	padding: 120px 0
@@ -361,7 +361,7 @@ h4
 				color: $accent
 			svg
 				width: 24px
-				min-width: 24px			
+				min-width: 24px
 				height: 25px
 				fill: #fff
 				@include d-flex
@@ -385,7 +385,7 @@ h4
 			fill: #fff
 			&:hover
 				fill: $accent
-						
+
 .dropdown-menu
 	padding: 0
 	border: none
@@ -401,4 +401,4 @@ h4
 
 .dropdown-item
 	padding: 10px
-	@include d-flex	
+	@include d-flex
