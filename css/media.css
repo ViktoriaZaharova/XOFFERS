@@ -376,6 +376,29 @@
   .language-box {
     margin: 0 0 0 20px;
   }
+  .start-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .start-box h4 {
+    margin: 15px 0 25px;
+  }
+  .start-box__content {
+    max-width: none;
+  }
+  .start-box__img {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .start-box:nth-child(even) .start-box__content {
+    max-width: none;
+  }
+  .start-box:nth-child(3) .box-text ul:last-child {
+    max-width: none;
+  }
 }
 @media only screen and (max-width: 370px) {
   .header-wrapper {

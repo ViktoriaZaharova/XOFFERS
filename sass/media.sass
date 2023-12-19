@@ -333,9 +333,24 @@
 	.language-box
 		margin: 0 0 0 20px
 
-@media only screen and (max-width: 480px)
-
-@media only screen and (max-width: 420px)
+	.start-box
+		flex-direction: column
+		h4
+			margin: 15px 0 25px
+		&__content
+			max-width: none
+		&__img	
+			order: -1
+		&:nth-child(even)
+			.start-box__content
+				max-width: none
+		&:nth-child(3)
+			.box-text
+				ul
+					&:last-child
+						max-width: none
+					
+			
 
 @media only screen and (max-width: 370px)
 	.header-wrapper

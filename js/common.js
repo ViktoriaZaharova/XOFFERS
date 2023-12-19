@@ -1,15 +1,4 @@
 // animate scroll
-// $(document).ready(function () { //плавный скролл
-// 	$(".go_to").on("click", function (event) {
-// 		event.preventDefault();
-// 		var id = $(this).attr('href'),
-// 			top = $(id).offset().top,
-// 			headerHeight = $('header').height();
-
-// 		$('body,html').animate({ scrollTop: top - headerHeight }, 500);
-// 	});
-// });
-
 $('.go_to').click(function (e) {
 	e.preventDefault();
 	var scroll_el = $(this).attr('href');
